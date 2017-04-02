@@ -1,0 +1,13 @@
+.top-bar {
+	background: $nav-background;
+}
+
+ .top-bar ul {
+	background: inherit;
+	padding: 0.5rem;
+}
+.top-bar {
+	.menu-text {
+		color: #fff;
+	}
+}
