@@ -31,9 +31,6 @@ describe('Countdown', () => {
 			var countdown = TestUtils.renderIntoDocument(<Countdown/>);
 			countdown.handleSetCountdown(1);
 
-			expect(countdown.state.countdownStatus).toBe('started');
-			expect(countdown.state.count).toBe(1);
-
 			setTimeout(() => {
 				expect(countdown.state.count).toBe(0);
 				done();

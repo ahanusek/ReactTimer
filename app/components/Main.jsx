@@ -8,7 +8,12 @@ var Main = props => {
 			<div>
 				<div>
 					<Nav></Nav>
-					{props.children}
+					<div className="row">
+						<div className="medium-6 medium-offset-3 columns">
+							{props.children}
+						</div>
+					</div>
+
 				</div>
 
 			</div>
