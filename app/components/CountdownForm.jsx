@@ -7,10 +7,9 @@ var CountdownForm = React.createClass({
 		var seconds = parseInt(this.refs.seconds.value, 10);
 		if(typeof seconds === "number" && seconds > 0){
 			this.props.onSetCountdown(seconds);
-		} else {
-			console.log('error value')
+			this.refs.seconds.value = "";
 		}
-		this.refs.seconds.value = "";
+
 	},
 	render: function(){
 		return (
